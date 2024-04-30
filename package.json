@@ -1,0 +1,18 @@
+{
+  "name": "fitflex",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "npm start --prefix client",
+    "server": "server\\env\\Scripts\\activate && cd server/fitflex && python manage.py runserver",
+    "watch": "concurrently 'npm:server' 'npm:client' "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
